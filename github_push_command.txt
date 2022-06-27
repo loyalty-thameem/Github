@@ -1,0 +1,4 @@
+//default github.
+git remote add origin https://github.com/loyalty-thameem/Github.git
+git branch -M main
+git push -u origin main
