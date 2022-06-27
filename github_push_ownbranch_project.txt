@@ -1,0 +1,32 @@
+//Experience my realtime ==> my codes push to my branch then, after compare&pull request to merged to main branch in fwb.
+  
+ git status
+ 
+ //add single file
+ git add src/drawerscreens/profile/tabs/editProfile/EditProfile.js
+ git status
+ greencolortext:modified:   src/drawerscreens/profile/tabs/editProfile/EditProfile.js
+ 
+ //add another file at same time two files
+ git add src/drawerscreens/profile/tabs/my/MyAds.js
+ git status
+ greencolortext:modified:   src/drawerscreens/profile/tabs/my/MyAds.js
+ 
+ //then, issues on commit(maybe some spelling don't use)
+ git commit -m'Modified some spelling'
+error: pathspec 'some' did not match any file(s) known to git
+error: pathspec 'spelling'' did not match any file(s) known to git
+
+ //===== why it's this because commit -m mistake
+ git checkout thameem
+ 
+ // the issue is cleared
+ git commit -m 'Modified'
+ [detached HEAD b985b51b] 'Modified'
+ 2 files changed, 8 insertions(+), 3 deletions(-)
+ 
+ //git push(not working)
+ show this: git push origin HEAD:<name-of-remote-branch>
+ 
+ //FINALLY PUSHED  AND WORKING FINE
+ git push origin HEAD:thameem
